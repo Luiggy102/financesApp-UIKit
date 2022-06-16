@@ -13,6 +13,12 @@
 		B94C31D9285B667D00102333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94C31D7285B667D00102333 /* Main.storyboard */; };
 		B94C31DB285B668000102333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94C31DA285B668000102333 /* Assets.xcassets */; };
 		B94C31DE285B668000102333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94C31DC285B668000102333 /* LaunchScreen.storyboard */; };
+		B94C31E7285B6BD400102333 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C31D5285B667D00102333 /* ViewController.swift */; };
+		B94C31E8285B6BD400102333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C31D1285B667D00102333 /* AppDelegate.swift */; };
+		B94C31E9285B6BD400102333 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C31D3285B667D00102333 /* SceneDelegate.swift */; };
+		B94C31EC285B6BD400102333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94C31DC285B668000102333 /* LaunchScreen.storyboard */; };
+		B94C31ED285B6BD400102333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94C31DA285B668000102333 /* Assets.xcassets */; };
+		B94C31EE285B6BD400102333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94C31D7285B667D00102333 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +30,19 @@
 		B94C31DA285B668000102333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B94C31DD285B668000102333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B94C31DF285B668000102333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B94C31F2285B6BD400102333 /* Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Production.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94C31F3285B6BD400102333 /* FinancesApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FinancesApp copy-Info.plist"; path = "/Users/luiggyn/Documents/Development/github/financesApp-UIKit/FinancesApp/FinancesApp copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B94C31CB285B667D00102333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94C31EA285B6BD400102333 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			children = (
 				B94C31D0285B667D00102333 /* FinancesApp */,
 				B94C31CF285B667D00102333 /* Products */,
+				B94C31F3285B6BD400102333 /* FinancesApp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				B94C31CE285B667D00102333 /* FinancesApp.app */,
+				B94C31F2285B6BD400102333 /* Production.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +94,7 @@
 				B94C31CA285B667D00102333 /* Sources */,
 				B94C31CB285B667D00102333 /* Frameworks */,
 				B94C31CC285B667D00102333 /* Resources */,
+				B94C31F4285B6CBF00102333 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -85,6 +103,23 @@
 			name = FinancesApp;
 			productName = FinancesApp;
 			productReference = B94C31CE285B667D00102333 /* FinancesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B94C31E5285B6BD400102333 /* Production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B94C31EF285B6BD400102333 /* Build configuration list for PBXNativeTarget "Production" */;
+			buildPhases = (
+				B94C31E6285B6BD400102333 /* Sources */,
+				B94C31EA285B6BD400102333 /* Frameworks */,
+				B94C31EB285B6BD400102333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Production;
+			productName = FinancesApp;
+			productReference = B94C31F2285B6BD400102333 /* Production.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,6 +151,7 @@
 			projectRoot = "";
 			targets = (
 				B94C31CD285B667D00102333 /* FinancesApp */,
+				B94C31E5285B6BD400102333 /* Production */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +167,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B94C31EB285B6BD400102333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94C31EC285B6BD400102333 /* LaunchScreen.storyboard in Resources */,
+				B94C31ED285B6BD400102333 /* Assets.xcassets in Resources */,
+				B94C31EE285B6BD400102333 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B94C31F4285B6CBF00102333 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B94C31CA285B667D00102333 /* Sources */ = {
@@ -141,6 +207,16 @@
 				B94C31D6285B667D00102333 /* ViewController.swift in Sources */,
 				B94C31D2285B667D00102333 /* AppDelegate.swift in Sources */,
 				B94C31D4285B667D00102333 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94C31E6285B6BD400102333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94C31E7285B6BD400102333 /* ViewController.swift in Sources */,
+				B94C31E8285B6BD400102333 /* AppDelegate.swift in Sources */,
+				B94C31E9285B6BD400102333 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +369,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +399,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +412,67 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B94C31F0285B6BD400102333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TX3WAVR9MU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FinancesApp copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UIKit.FinancesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B94C31F1285B6BD400102333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TX3WAVR9MU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FinancesApp copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UIKit.FinancesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -353,6 +493,15 @@
 			buildConfigurations = (
 				B94C31E3285B668000102333 /* Debug */,
 				B94C31E4285B668000102333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B94C31EF285B6BD400102333 /* Build configuration list for PBXNativeTarget "Production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94C31F0285B6BD400102333 /* Debug */,
+				B94C31F1285B6BD400102333 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
